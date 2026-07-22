@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Bienvenue sur le blog"
+title: "Welcome to the blog"
 date: 2026-07-22
-excerpt: "Premier article : pourquoi ce blog, et ce que vous y trouverez."
+excerpt: "First post: why this blog, and what you'll find here."
 ---
 
-Ce blog rassemble mes reflexions sur la fiscalite internationale, la conformite reglementaire et les strategies cross-border, les sujets que j'accompagne au quotidien aupres de dirigeants et de comites executifs.
+This blog gathers my reflections on international taxation, regulatory compliance, and cross-border strategy — the topics I work on daily alongside executives and leadership teams.
 
-Les prochains articles seront publies ici au fil de mes travaux et observations.
+Future articles will be published here as my work and observations develop.
