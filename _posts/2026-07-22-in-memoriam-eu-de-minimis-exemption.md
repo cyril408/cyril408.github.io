@@ -2,7 +2,7 @@
 layout: post
 title: "In Memoriam: The EU De Minimis Exemption (2021-2026)"
 date: 2026-07-22
-excerpt: "For five years, a EUR150 threshold let billions of low-value parcels enter the EU duty-free. As of 1 July 2026, that exemption is gone, and the economics of cross-border e-commerce change overnight."
+excerpt: "For five years, a &euro;150 threshold let billions of low-value parcels enter the EU duty-free. As of 1 July 2026, that exemption is gone, and the economics of cross-border e-commerce change overnight."
 ---
 <p><strong>In Memoriam &mdash; The EU De Minimis Exemption (&euro;0 &ndash; &euro;149.99)</strong><br>
 Born: 1 July 2021 &middot; Departed: 1 July 2026 &middot; Age: five years of blissful naivety</p>
