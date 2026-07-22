@@ -3,3 +3,5 @@ description: "Insights on international tax, regulatory compliance, and cross-bo
 url: "https://cbconsulting-management.com"
 permalink: /blog/:year/:month/:day/:title/
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
