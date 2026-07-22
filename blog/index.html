@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<div class="blog-eyebrow">Insights</div>
+<h1 class="blog-title">Notes on tax, regulation<br><em>&amp; cross-border strategy</em></h1>
+<div class="blog-list">
+{% for post in site.posts %}
+<a href="{{ post.url }}" class="post-item">
+<div class="post-date">{{ post.date | date: "%d %B %Y" }}</div>
+<div class="post-title">{{ post.title }}</div>
+<p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+</a>
+{% endfor %}
+</div>
