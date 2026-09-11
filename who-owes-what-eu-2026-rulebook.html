@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who Owes What: The EU's 2026 Rulebook for Low-Value Imports | CB Consulting & Management</title>
+<style>
+  :root{
+    --ink:#16233F;
+    --body-text:#3B4457;
+    --paper:#F7F8FA;
+    --card:#FFFFFF;
+    --rule:#DCE1E8;
+    --brass:#9C7A2E;
+    --vat:#2E5395;
+    --customs:#1F6F5C;
+    --compliance:#6A3D9A;
+    --liability:#A5342C;
+    --pill-green-bg:#E3F3EA; --pill-green-fg:#1E6B45;
+    --pill-amber-bg:#FBF0DA; --pill-amber-fg:#8A5A0F;
+    --pill-gray-bg:#EAEDF1;  --pill-gray-fg:#4A5568;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--body-text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  .wrap{max-width:740px;margin:0 auto;padding:64px 24px 96px;}
+
+  header.hero{margin-bottom:52px;}
+  .kicker{
+    color:var(--brass);
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    margin:0 0 14px;
+  }
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:40px;
+    line-height:1.18;
+    color:var(--ink);
+    margin:0 0 18px;
+    letter-spacing:-0.01em;
+  }
+  .dek{
+    font-size:19px;
+    color:var(--body-text);
+    line-height:1.55;
+    margin:0 0 22px;
+    max-width:62ch;
+  }
+  .byline{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+    color:#6B7280;
+    border-top:1px solid var(--rule);
+    padding-top:18px;
+  }
+  .byline strong{color:var(--ink);}
+
+  article p{margin:0 0 20px;}
+  article h2.section-title{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:24px;
+    color:var(--ink);
+    margin:0 0 14px;
+  }
+  .intro{margin-bottom:48px;}
+  .intro .callout{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-left:4px solid var(--brass);
+    padding:18px 22px;
+    font-size:15.5px;
+    color:var(--body-text);
+    margin:28px 0 8px;
+  }
+  .intro .callout strong{color:var(--ink);}
+
+  .category{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-radius:3px;
+    margin-bottom:36px;
+    overflow:hidden;
+  }
+  .category-head{
+    padding:22px 28px 18px;
+    border-bottom:1px solid var(--rule);
+  }
+  .category-head h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:23px;
+    margin:0 0 4px;
+    color:var(--cat-color);
+  }
+  .category-head p{
+    margin:0;
+    font-size:14.5px;
+    color:#6B7280;
+  }
+  .category[data-cat="vat"]{--cat-color:var(--vat);}
+  .category[data-cat="customs"]{--cat-color:var(--customs);}
+  .category[data-cat="compliance"]{--cat-color:var(--compliance);}
+  .category[data-cat="liability"]{--cat-color:var(--liability);}
+  .category-head{border-top:4px solid var(--cat-color);}
+
+  .items{padding:6px 28px 8px;}
+  .item{
+    padding:18px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .item:last-child{border-bottom:none;}
+  .item-top{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:10px;
+    margin-bottom:8px;
+  }
+  .item-name{
+    font-weight:700;
+    color:var(--ink);
+    font-size:16px;
+  }
+  .pill{
+    display:inline-block;
+    font-size:12px;
+    font-weight:600;
+    padding:3px 10px;
+    border-radius:100px;
+    white-space:nowrap;
+  }
+  .pill-inforce{background:var(--pill-green-bg);color:var(--pill-green-fg);}
+  .pill-amber{background:var(--pill-amber-bg);color:var(--pill-amber-fg);}
+  .pill-draft{background:var(--pill-gray-bg);color:var(--pill-gray-fg);}
+  .item-status{
+    font-size:13px;
+    color:#6B7280;
+  }
+  .item p{
+    margin:0;
+    font-size:15px;
+    color:var(--body-text);
+  }
+  .item p .liable{color:var(--ink);font-weight:600;}
+
+  .channel-box{
+    margin:14px 28px 22px;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding:16px 20px;
+  }
+  .channel-box h3{
+    font-size:12.5px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#6B7280;
+    margin:0 0 12px;
+    font-weight:700;
+  }
+  .channel-row{
+    display:flex;
+    gap:24px;
+    padding:10px 0;
+    border-bottom:1px dashed var(--rule);
+    font-size:14.5px;
+  }
+  .channel-row:last-child{border-bottom:none;}
+  .channel-row .obligation{
+    flex:0 0 34%;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .channel-row .sides{flex:1;display:flex;gap:16px;}
+  .channel-row .side{flex:1;}
+  .channel-row .side .side-label{
+    display:block;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:#9AA3B2;
+    margin-bottom:2px;
+  }
+
+  .legend{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    padding:20px 0 0;
+    font-size:13.5px;
+    color:#6B7280;
+  }
+  .legend .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;}
+  .dot-green{background:#1E6B45;}
+  .dot-amber{background:#8A5A0F;}
+  .dot-gray{background:#4A5568;}
+
+  footer{
+    margin-top:56px;
+    padding-top:28px;
+    border-top:1px solid var(--rule);
+    font-size:14px;
+    color:#6B7280;
+  }
+  footer .firm{color:var(--ink);font-weight:700;font-size:15px;margin-bottom:6px;}
+  footer a{color:var(--brass);text-decoration:none;border-bottom:1px solid transparent;}
+  footer a:hover{border-bottom-color:var(--brass);}
+
+  @media (max-width:600px){
+    .wrap{padding:40px 18px 72px;}
+    h1{font-size:30px;}
+    .dek{font-size:17px;}
+    .category-head,.items{padding-left:18px;padding-right:18px;}
+    .channel-box{margin-left:18px;margin-right:18px;}
+    .channel-row,.channel-row .sides{flex-direction:column;gap:6px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="kicker">Regulatory Watch — EU E-commerce Compliance</p>
+    <h1>Who Owes What: The EU's 2026 Rulebook for Low-Value Imports</h1>
+    <p class="dek">A reading grid for non-EU sellers and marketplaces navigating VAT, customs duties, product safety and product liability as Brussels rewrites the rules on low-value parcels — piece by piece, on four different timelines.</p>
+    <div class="byline">
+      <span><strong>CB Consulting &amp; Management</strong> · Regulatory analysis</span>
+      <span>·</span>
+      <span>Status as of 11 September 2026</span>
+    </div>
+  </header>
+
+  <div class="intro">
+    <p>If you sell to EU consumers from outside the Union — directly or through a marketplace — 2026 is the year four separate legal regimes are moving at once: VAT, customs duties, product safety, and product liability. None of them share a calendar. Some are in force. One was adopted but still isn't published. One is a leaked draft that hasn't even been presented yet.</p>
+    <p>This grid exists to answer one question clearly: <strong>at any given moment, who is actually on the hook</strong> — the seller, the marketplace, or an EU-based representative? We've organised it by legal domain, and inside each domain, by sales channel.</p>
+    <div class="callout">
+      <strong>Read this as a snapshot, not a forecast.</strong> Two of the texts below are still moving — the recast Union Customs Code has cleared political agreement but isn't yet in the Official Journal, and the European Product Act is a leaked draft ahead of its official presentation. We flag both explicitly rather than treating them as settled law.
+    </div>
+  </div>
+
+  <article>
+
+    <!-- VAT -->
+    <section class="category" data-cat="vat">
+      <div class="category-head">
+        <h2>VAT on Distance Sales</h2>
+        <p>The one regime that hasn't moved since 2021 — and won't, under the current reform.</p>
+      </div>
+      <div class="items">
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">VAT Directive (2006/112/EC, as amended by Directive (EU) 2017/2455)</span>
+            <span class="pill pill-inforce">In force since 1 July 2021</span>
+          </div>
+          <p>Removed the VAT exemption on low-value imports and created the IOSS and OSS one-stop-shop schemes. <span class="liable">Liable party:</span> the non-EU seller, or its IOSS intermediary.</p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Implementing Regulation (EU) 2019/2026</span>
+            <span class="pill pill-inforce">In force</span>
+          </div>
+          <p>Sets the practical mechanics of the IOSS/OSS scheme — monthly return, single Member State of identification. <span class="liable">Liable party:</span> the EU-established IOSS intermediary.</p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Art. 14a VAT Directive — the "deemed supplier" rule</span>
+            <span class="pill pill-inforce">In force</span>
+          </div>
+          <p>A marketplace that facilitates a distance sale of imported goods is treated as if it received and supplied the goods itself. <span class="liable">Liable party:</span> the marketplace — not the underlying non-EU seller.</p>
+        </div>
+      </div>
+      <div class="channel-box">
+        <h3>Direct sale vs. marketplace sale</h3>
+        <div class="channel-row">
+          <div class="obligation">VAT on import</div>
+          <div class="sides">
+            <div class="side"><span class="side-label">Direct sale</span>Seller, via IOSS or a tax intermediary</div>
+            <div class="side"><span class="side-label">Marketplace sale</span>Marketplace, as deemed supplier</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMS -->
+    <section class="category" data-cat="customs">
+      <div class="category-head">
+        <h2>Customs Duties on Low-Value Imports</h2>
+        <p>The regime in the most active state of change — three overlapping timelines at once.</p>
+      </div>
+      <div class="items">
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Former €150 customs duty exemption threshold</span>
+            <span class="pill pill-draft">Abolished 1 July 2026</span>
+          </div>
+          <p>The old duty-free treatment for consignments under €150 no longer applies. Superseded — kept here only for reference.</p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Transitional flat duty of €3 per item</span>
+            <span class="pill pill-inforce">In force since 1 July 2026</span>
+          </div>
+          <p>A flat customs duty per 4-digit tariff heading, applicable regardless of VAT collection scheme — IOSS, special arrangements, or standard VAT — until the EU Customs Data Hub is fully operational (mid-2028). <span class="liable">Liable party:</span> the declarant — the seller, the platform, or their indirect representative. <em>(Exact Official Journal reference still to be confirmed on EUR-Lex.)</em></p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Recast Union Customs Code (UCC reform package)</span>
+            <span class="pill pill-amber">Adopted, not yet published</span>
+          </div>
+          <p>Political agreement reached 26 March 2026; Council approval in early September 2026; final Parliament vote still pending as of this writing. Establishes third-country marketplaces as the legal importer of record, and creates the EU Customs Data Hub and a new EU Customs Authority. <span class="liable">Liable party (once in force):</span> the marketplace, by operation of law.</p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">EU Customs Data Hub</span>
+            <span class="pill pill-amber">Mandatory from July 2028 / March 2034</span>
+          </div>
+          <p>Centralised digital customs platform that eventually replaces the transitional flat-duty regime, returning to standard per-product tariffs from the first euro.</p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Product Identifiers (PID — C127/C128/C129 codes)</span>
+            <span class="pill pill-amber">Mandatory from November 2026</span>
+          </div>
+          <p>Required for every B2C import regardless of value; voluntary since 1 July 2026. Does not apply to VAT-registered B2B consignees.</p>
+        </div>
+      </div>
+      <div class="channel-box">
+        <h3>Direct sale vs. marketplace sale</h3>
+        <div class="channel-row">
+          <div class="obligation">€3 transitional flat duty</div>
+          <div class="sides">
+            <div class="side"><span class="side-label">Direct sale</span>Seller or declarant, whatever the VAT scheme</div>
+            <div class="side"><span class="side-label">Marketplace sale</span>Marketplace, as declarant</div>
+          </div>
+        </div>
+        <div class="channel-row">
+          <div class="obligation">Importer-of-record status (post-UCC, not yet in force)</div>
+          <div class="sides">
+            <div class="side"><span class="side-label">Direct sale</span>Seller in principle, unless no EU establishment</div>
+            <div class="side"><span class="side-label">Marketplace sale</span>Marketplace, by operation of law</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT COMPLIANCE -->
+    <section class="category" data-cat="compliance">
+      <div class="category-head">
+        <h2>Product Safety &amp; Compliance</h2>
+        <p>One settled regulation, and one leaked draft that would reshape marketplace liability.</p>
+      </div>
+      <div class="items">
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">General Product Safety Regulation — Reg. (EU) 2023/988</span>
+            <span class="pill pill-inforce">In force since 13 December 2024</span>
+          </div>
+          <p>General safety and traceability requirements; requires an EU-based responsible operator for non-harmonised products. <span class="liable">Liable party:</span> the manufacturer — failing an EU operator, the importer, authorised representative, or the marketplace by default.</p>
+        </div>
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">European Product Act (EPA)</span>
+            <span class="pill pill-draft">Draft — presentation expected 6 Oct 2026</span>
+          </div>
+          <p>A recast of the New Legislative Framework, the Market Surveillance Regulation and the Standardisation Regulation. Per the draft reported by Euronews on 10 September 2026, marketplaces would need to verify a Digital Product Passport or manufacturer liability registry before listing, remove non-compliant products on notice, and assume representative obligations if they fail to. <em>Not yet legally binding.</em></p>
+        </div>
+      </div>
+      <div class="channel-box">
+        <h3>Direct sale vs. marketplace sale</h3>
+        <div class="channel-row">
+          <div class="obligation">General compliance (GPSR)</div>
+          <div class="sides">
+            <div class="side"><span class="side-label">Direct sale</span>Manufacturer, then representative, then importer</div>
+            <div class="side"><span class="side-label">Marketplace sale</span>Marketplace, only if no EU operator identifiable</div>
+          </div>
+        </div>
+        <div class="channel-row">
+          <div class="obligation">Digital Product Passport (EPA — draft)</div>
+          <div class="sides">
+            <div class="side"><span class="side-label">Direct sale</span>Designated EU operator, or importer/representative</div>
+            <div class="side"><span class="side-label">Marketplace sale</span>Marketplace must verify before listing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT LIABILITY -->
+    <section class="category" data-cat="liability">
+      <div class="category-head">
+        <h2>Liability for Defective Products</h2>
+        <p>Channel-neutral — the same rule whether the sale runs through a marketplace or not.</p>
+      </div>
+      <div class="items">
+        <div class="item">
+          <div class="item-top">
+            <span class="item-name">Directive (EU) 2024/2853</span>
+            <span class="pill pill-amber">Transposition deadline 9 Dec 2026</span>
+          </div>
+          <p>Adopted 23 October 2024, published 18 November 2024. Extends liability to components and software; where no EU manufacturer exists, liability can fall on the importer or, failing that, the fulfilment service provider. Applies regardless of consignment value.</p>
+        </div>
+      </div>
+      <div class="channel-box">
+        <h3>Direct sale vs. marketplace sale</h3>
+        <div class="channel-row">
+          <div class="obligation">Defective product liability</div>
+          <div class="sides">
+            <div class="side"><span class="side-label">Direct sale</span>Manufacturer, then importer</div>
+            <div class="side"><span class="side-label">Marketplace sale</span>Manufacturer, then importer — extension to fulfilment providers possible</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="legend">
+      <span><span class="dot dot-green"></span>In force</span>
+      <span><span class="dot dot-amber"></span>Adopted, not yet published / mandatory on a future date</span>
+      <span><span class="dot dot-gray"></span>Draft, or superseded</span>
+    </div>
+
+  </article>
+
+  <footer>
+    <p class="firm">CB Consulting &amp; Management</p>
+    <p>Independent advisory on EU indirect tax, customs and cross-border e-commerce compliance. This grid is a working reference, not legal advice — two of the texts it describes are still moving, and we'll update it as they settle. For a compliance review specific to your sales channels, <a href="mailto:contact@cbconsulting-management.com">get in touch</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
+
