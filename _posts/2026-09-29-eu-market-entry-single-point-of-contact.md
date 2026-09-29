@@ -42,7 +42,7 @@ My legal background lets me give accessory legal input directly on customs and t
 
 I have summarised the approach in a short slide deck, including a comparison of the three sales channels (importer of record, VAT and customs handling, speed to market, control over pricing and brand).
 
-**[Download the EU market entry deck (PDF)](/assets/blog/EU_Market_Entry_CB_Consulting_Services.pdf)**
+**[Download the EU market entry deck (PDF)](/assets/blog/EU%20Market%20Entry%20%E2%80%94%20CB%20Consulting%20Services.pdf)**
 
 If you are preparing to sell into the EU, or if your current setup feels fragmented, let's talk.
 
