@@ -5,6 +5,8 @@ date: 2026-09-01
 excerpt: "1 July to 1 September: two months since the EU's flat €3 customs duty on small parcels took effect. A look at what it actually is, what it isn't, and what the import numbers show so far."
 ---
 
+> **Update, 5 October 2026.** Two points in this article have moved on. The Commission's guidance shows the €3 duty is charged per customs declaration line, which depends on the type of declaration filed, not simply per HS code. And the Union handling fee now has an amount: €2, set by a delegated act adopted on 21 September 2026 and still awaiting publication in the Official Journal. Full analysis: [EU €3 Customs Duty: Per Item, Per Tariff Line or Per Declaration Line?](/blog/2026/10/05/eu-3-euro-duty-per-declaration-line/)
+
 Today marks exactly two months since the EU's flat €3 customs duty on small parcels took effect. Long enough for the first hard numbers to come in from customs authorities and carriers — and long enough to notice that most coverage still confuses this measure with a second one that hasn't even started yet.
 
 ## Two charges, not one
