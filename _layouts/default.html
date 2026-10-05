@@ -214,7 +214,7 @@ footer { flex-direction: column; gap: 0.75rem; text-align: center; }
     var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
     var browserFr = nav.toLowerCase().indexOf('fr') === 0;
     if (flag === 'fr' || (flag === null && browserFr)) {
-      var main = document.querySelector('main');
+      var main = document.querySelector('main .container') || document.querySelector('main');
       if (!main) return;
       var n = document.createElement('p');
       n.setAttribute('lang', 'fr');
