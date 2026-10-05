@@ -5,6 +5,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mentions légales — CB Consulting &amp; Management</title>
 <meta name="description" content="Mentions légales du site cbconsulting-management.com : éditeur, directeur de la publication, hébergeur.">
+<!-- Consent: Google Analytics is loaded only after the visitor accepts (CNIL / RGPD) -->
+<script>
+(function () {
+  var GA_ID = 'G-Y8LNV46H24', KEY = 'cb_consent', MAX_AGE = 183 * 24 * 3600 * 1000;
+  var fr = (document.documentElement.lang || 'en').toLowerCase().indexOf('fr') === 0;
+  var T = fr ? {"msg": "Ce site utilise Google Analytics pour mesurer son audience. Aucun traceur n'est déposé sans votre accord. Vous pouvez modifier votre choix à tout moment.", "yes": "Accepter", "no": "Refuser", "more": "En savoir plus", "set": "Gérer mes cookies", "label": "Cookies"} : {"msg": "This site uses Google Analytics to measure its audience. No tracker is set without your consent. You can change your choice at any time.", "yes": "Accept", "no": "Decline", "more": "Learn more", "set": "Cookie settings", "label": "Cookies"};
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  function read() {
+    try {
+      var v = JSON.parse(localStorage.getItem(KEY));
+      if (v && (v.c === 'granted' || v.c === 'denied') && (Date.now() - v.t) < MAX_AGE) return v.c;
+    } catch (e) {}
+    return null;
+  }
+  function save(c) { try { localStorage.setItem(KEY, JSON.stringify({ c: c, t: Date.now() })); } catch (e) {} }
+  function purge() {
+    var host = location.hostname, domains = [host, '.' + host];
+    document.cookie.split(';').forEach(function (k) {
+      var n = k.split('=')[0].trim();
+      if (n === '_ga' || n.indexOf('_ga_') === 0 || n === '_gid' || n === '_gat') {
+        domains.forEach(function (d) { document.cookie = n + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + d; });
+        document.cookie = n + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+      }
+    });
+  }
+  function load() {
+    window['ga-disable-' + GA_ID] = false;
+    if (window.__cbGa) return;
+    window.__cbGa = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', GA_ID, { cookie_expires: 34128000 });
+  }
+  function unload() { window['ga-disable-' + GA_ID] = true; purge(); }
+  function closeBox() { var b = document.getElementById('cb-consent'); if (b) b.parentNode.removeChild(b); }
+  function choose(c) { save(c); closeBox(); if (c === 'granted') load(); else unload(); }
+  function open() {
+    if (document.getElementById('cb-consent')) return;
+    if (!document.getElementById('cb-consent-css')) {
+      var st = document.createElement('style');
+      st.id = 'cb-consent-css';
+      st.textContent = "#cb-consent{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:1000;max-width:46rem;margin:0 auto;background:#f7f4ef;color:#1a1814;border:1px solid #b8975a;padding:1.25rem 1.5rem;display:flex;gap:1rem 1.5rem;align-items:center;flex-wrap:wrap;font:300 0.85rem/1.6 DM Sans,system-ui,sans-serif;box-shadow:0 8px 30px rgba(26,24,20,.18)}#cb-consent p{margin:0;flex:1 1 20rem}#cb-consent a{color:#1a1814;text-decoration:underline;text-decoration-color:#b8975a;text-underline-offset:3px}.cb-c-btns{display:flex;gap:.75rem}#cb-consent button{font:500 0.72rem DM Sans,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1a1814;background:transparent;border:1px solid #1a1814;padding:.65rem 1.4rem;min-height:44px;cursor:pointer}#cb-consent button:hover{background:#1a1814;color:#f7f4ef}#cb-consent button:focus-visible,#cb-consent a:focus-visible{outline:2px solid #1a1814;outline-offset:3px}";
+      document.head.appendChild(st);
+    }
+    var box = document.createElement('div');
+    box.id = 'cb-consent';
+    box.setAttribute('role', 'region');
+    box.setAttribute('aria-label', T.label);
+    box.innerHTML = '<p>' + T.msg + ' <a href="/mentions-legales/#cookies">' + T.more + '</a></p>' +
+      '<div class="cb-c-btns"><button type="button" data-v="denied">' + T.no + '</button>' +
+      '<button type="button" data-v="granted">' + T.yes + '</button></div>';
+    box.addEventListener('click', function (e) {
+      var v = e.target && e.target.getAttribute ? e.target.getAttribute('data-v') : null;
+      if (v) choose(v);
+    });
+    document.body.appendChild(box);
+  }
+  window.cbConsent = { open: open };
+  var current = read();
+  if (current === 'granted') load(); else window['ga-disable-' + GA_ID] = true;
+  function ready() {
+    var fc = document.querySelector('.footer-copy');
+    if (fc && !fc.querySelector('[data-cookie-settings]')) {
+      var a = document.createElement('a');
+      a.href = '#';
+      a.setAttribute('data-cookie-settings', '');
+      a.textContent = T.set;
+      a.style.cssText = 'color: rgba(240,235,227,0.65); text-decoration: underline;';
+      fc.appendChild(document.createTextNode(' \u00b7 '));
+      fc.appendChild(a);
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('[data-cookie-settings]'), function (el) {
+      el.addEventListener('click', function (e) { e.preventDefault(); open(); });
+    });
+    if (current === null) open();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready); else ready();
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -79,6 +162,15 @@ dd { margin: 0; }
 <section>
 <h2>Propriété intellectuelle</h2>
 <p>Sauf mention contraire, les textes, articles et éléments graphiques de ce site sont la propriété de leur auteur. Toute reproduction ou représentation, totale ou partielle, sans autorisation préalable est interdite (Code de la propriété intellectuelle).</p>
+</section>
+
+<section id="cookies">
+<h2>Données personnelles et cookies</h2>
+<p>Responsable du traitement : CB Consulting &amp; Management (coordonnées ci-dessus).</p>
+<p>Ce site utilise Google Analytics (Google) pour mesurer son audience : pages consultées, durée des visites, provenance approximative des visiteurs. Les traceurs ne sont déposés et ces données ne sont collectées qu'avec votre consentement (article 6.1.a du RGPD et article 82 de la loi Informatique et Libertés). Sans votre accord, aucun traceur de mesure d'audience n'est chargé. Ces données peuvent être transférées par Google hors de l'Union européenne, notamment aux États-Unis.</p>
+<p>Vous pouvez accepter, refuser ou modifier votre choix à tout moment : <a href="#" data-cookie-settings>Gérer mes cookies</a>. Votre choix est mémorisé dans votre navigateur pendant 6 mois, puis il vous sera redemandé.</p>
+<p>Les traceurs ont une durée de vie de 13 mois au maximum, et les données de mesure d'audience sont conservées 25 mois au maximum, conformément aux recommandations de la CNIL.</p>
+<p>Les informations que vous transmettez par e-mail sont utilisées uniquement pour répondre à votre demande. Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité, que vous pouvez exercer en écrivant à <a href="mailto:cyril@cbconsulting-management.com">cyril@cbconsulting-management.com</a>. Vous pouvez aussi introduire une réclamation auprès de la CNIL (cnil.fr).</p>
 </section>
 
 </main>
