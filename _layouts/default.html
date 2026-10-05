@@ -201,5 +201,30 @@ footer { flex-direction: column; gap: 0.75rem; text-align: center; }
   <div class="footer-logo">Cyril Bray</div>
   <div class="footer-copy">CB Consulting &amp; Management SASU © 2026 Cyril Bray · RCS Paris 104 466 586 · Publisher and author: Cyril Bray · <a href="/mentions-legales/" style="color: rgba(240,235,227,0.65); text-decoration: underline;">Mentions légales</a></div>
   </footer>
-  </body>
+  <script>
+(function () {
+  try {
+    var KEY = 'cb_lang', origin = location.origin, ref = document.referrer || '';
+    var same = ref.indexOf(origin) === 0, path = same ? ref.slice(origin.length) : '';
+    if (same) {
+      if (path.indexOf('/fr') === 0) sessionStorage.setItem(KEY, 'fr');
+      else if (path.indexOf('/blog') !== 0 && path.indexOf('/mentions') !== 0) sessionStorage.setItem(KEY, 'en');
+    }
+    var flag = sessionStorage.getItem(KEY);
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    var browserFr = nav.toLowerCase().indexOf('fr') === 0;
+    if (flag === 'fr' || (flag === null && browserFr)) {
+      var main = document.querySelector('main');
+      if (!main) return;
+      var n = document.createElement('p');
+      n.setAttribute('lang', 'fr');
+      n.setAttribute('role', 'note');
+      n.style.cssText = 'margin:0 0 2.5rem;padding:0.9rem 1.25rem;background:#ede9e2;border:1px solid #c8c3bc;font-size:0.82rem;line-height:1.6;color:#4a4640';
+      n.innerHTML = 'Les articles du blog sont publi\u00e9s en anglais, langue de nos lecteurs internationaux. <a href="/fr/" style="color:#1a1814;text-decoration:underline">Retour \u00e0 la version fran\u00e7aise</a>';
+      main.insertBefore(n, main.firstChild);
+    }
+  } catch (e) {}
+})();
+</script>
+</body>
   </html>
