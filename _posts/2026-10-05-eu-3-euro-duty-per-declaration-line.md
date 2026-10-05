@@ -5,6 +5,8 @@ date: 2026-10-05
 excerpt: "The €3 duty is charged per declaration line, not per article and not simply per HS code. The same parcel can cost €3 or €9 depending on the declaration filed — and from November, a €2 handling fee is expected on top."
 ---
 
+<style>.article-body table td + td { white-space: nowrap; }</style>
+
 The EU €3 customs duty is charged per declaration line, not per article and not simply per HS code. That distinction decides what a non-EU seller actually pays on each parcel.
 
 Since 1 July 2026, every low-value parcel sold to EU consumers through IOSS or by post carries a flat €3 customs duty. Three months in, sellers still read three different versions online: €3 per article, €3 per HS code, €3 per parcel. None of them is quite right, and the gap shows up on your landed cost, your returns and your checkout price.
