@@ -2,7 +2,7 @@
 layout: post
 title: "EU Guidance of 5 October 2026: What the Commission Now Says About the €2 Union Handling Fee"
 date: 2026-10-06
-excerpt: The Commission's new guidance on the €3 duty now covers the €2 Union handling fee: per declaration line, no value threshold, no end date, non-refundable, and VAT is due on it. Here is what changes for sellers, platforms and customs representatives, subject to publication of the delegated act.
+excerpt: The Commission's new guidance on the €3 duty now covers the €2 Union handling fee. It is counted per declaration line, has no value threshold and no end date, is non-refundable, and carries VAT. Here is what changes for sellers, platforms and customs representatives, subject to publication of the delegated act.
 ---
 <style>.article-body table td + td { white-space: nowrap; }</style>
 
