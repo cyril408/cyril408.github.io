@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 612" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8a857d"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="612" fill="#ffffff"/>
+  <text x="24" y="34" font-size="16" font-weight="bold" fill="#1a1814">Where the goods sit when the consumer buys decides the bill</text>
+  <g fill="none" stroke="#8a857d" stroke-width="1.25">
+    <path d="M380 120V148" marker-end="url(#arrow)"/>
+    <path d="M492 190H598V260" marker-end="url(#arrow)"/>
+    <path d="M268 190H170V274" marker-end="url(#arrow)"/>
+    <path d="M170 332V354" marker-end="url(#arrow)"/>
+    <path d="M170 444V470H100V498" marker-end="url(#arrow)"/>
+    <path d="M170 470H262V498" marker-end="url(#arrow)"/>
+    <path d="M598 462V478" stroke-dasharray="4 4"/>
+  </g>
+  <rect x="250" y="72" width="260" height="48" rx="8" fill="#f7f4ef" stroke="#8a857d" stroke-width="1.25"/>
+  <text x="380" y="100" text-anchor="middle" font-weight="bold" fill="#1a1814">B2C order from an EU consumer</text>
+  <polygon points="268,190 380,150 492,190 380,230" fill="#ffffff" stroke="#8a857d" stroke-width="1.25"/>
+  <text x="380" y="186" text-anchor="middle" font-size="12" fill="#1a1814">Goods already in the EU</text>
+  <text x="380" y="202" text-anchor="middle" font-size="12" fill="#1a1814">at the time of sale?</text>
+  <text x="545" y="182" text-anchor="middle" font-size="11.5" fill="#4a4640">yes</text>
+  <text x="215" y="182" text-anchor="middle" font-size="11.5" fill="#4a4640">no</text>
+  <rect x="60" y="276" width="220" height="56" rx="8" fill="#f7f4ef" stroke="#8a857d" stroke-width="1.25"/>
+  <text x="170" y="300" text-anchor="middle" font-weight="bold" fill="#1a1814">Distance sale</text>
+  <text x="170" y="318" text-anchor="middle" font-size="11.5" fill="#4a4640">Shipped from a third country</text>
+  <polygon points="50,400 170,356 290,400 170,444" fill="#ffffff" stroke="#8a857d" stroke-width="1.25"/>
+  <text x="170" y="396" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1814">Preferential origin?</text>
+  <text x="170" y="412" text-anchor="middle" font-size="11.5" fill="#4a4640">H1, no IOSS, proof</text>
+  <text x="118" y="462" text-anchor="middle" font-size="11.5" fill="#4a4640">no</text>
+  <text x="222" y="462" text-anchor="middle" font-size="11.5" fill="#4a4640">yes</text>
+  <rect x="30" y="500" width="140" height="56" rx="8" fill="#f6e3df" stroke="#b5473a" stroke-width="2"/>
+  <text x="100" y="524" text-anchor="middle" font-weight="bold" fill="#1a1814">Classic route</text>
+  <text x="100" y="542" text-anchor="middle" font-size="11.5" fill="#1a1814">€3 + €2 per item</text>
+  <rect x="192" y="500" width="140" height="56" rx="8" fill="#e4eee0" stroke="#4f7a4a" stroke-width="2"/>
+  <text x="262" y="524" text-anchor="middle" font-weight="bold" fill="#1a1814">Exit 2: origin</text>
+  <text x="262" y="542" text-anchor="middle" font-size="11.5" fill="#1a1814">Preference + €2</text>
+  <rect x="460" y="262" width="276" height="200" rx="8" fill="none" stroke="#8a857d" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="476" y="286" font-weight="bold" fill="#1a1814">Exit 1: EU stock</text>
+  <rect x="476" y="300" width="244" height="56" rx="8" fill="#f5ecd9" stroke="#b8975a" stroke-width="2"/>
+  <text x="598" y="324" text-anchor="middle" font-weight="bold" fill="#1a1814">Customs warehouse</text>
+  <text x="598" y="342" text-anchor="middle" font-size="11.5" fill="#1a1814">No €3, no fee; transitional</text>
+  <rect x="476" y="376" width="244" height="56" rx="8" fill="#e4eee0" stroke="#4f7a4a" stroke-width="2"/>
+  <text x="598" y="400" text-anchor="middle" font-weight="bold" fill="#1a1814">Logistics warehouse</text>
+  <text x="598" y="418" text-anchor="middle" font-size="11.5" fill="#1a1814">Cleared B2B, normal duty; durable</text>
+  <rect x="476" y="480" width="244" height="56" rx="8" fill="#ffffff" stroke="#8a857d" stroke-width="1.25" stroke-dasharray="4 4"/>
+  <text x="598" y="504" text-anchor="middle" font-weight="bold" fill="#1a1814">From 1 July 2028</text>
+  <text x="598" y="522" text-anchor="middle" font-size="11.5" fill="#4a4640">Distance-sales warehouse, lower fee</text>
+  <rect x="30" y="580" width="12" height="12" rx="3" fill="#f6e3df" stroke="#b5473a" stroke-width="1.5"/>
+  <text x="48" y="590" font-size="11.5" fill="#4a4640">Full levies</text>
+  <rect x="150" y="580" width="12" height="12" rx="3" fill="#f5ecd9" stroke="#b8975a" stroke-width="1.5"/>
+  <text x="168" y="590" font-size="11.5" fill="#4a4640">Exit, transitional</text>
+  <rect x="300" y="580" width="12" height="12" rx="3" fill="#e4eee0" stroke="#4f7a4a" stroke-width="1.5"/>
+  <text x="318" y="590" font-size="11.5" fill="#4a4640">Exit, durable</text>
+</svg>
