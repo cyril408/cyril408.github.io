@@ -4,7 +4,7 @@ title: "EU E-commerce Imports After 1 November 2026: The €3 Duty, the €2 Han
 date: 2026-10-29
 excerpt: From 1 November, a €41 parcel from China can carry €23.20 of EU levies. One worked example, three scenarios, and the only two legal ways to reduce the bill, holding stock in the EU and claiming preferential origin, tested against the French customs decision of 26 October and the Commission's guidance.
 ---
-<style>.article-body table td + td { white-space: nowrap; }</style>
+<style>.article-body table { width: 100%; margin: 1.5rem 0 2rem; border-collapse: collapse; } .article-body th, .article-body td { vertical-align: top; text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--ink-faint); }</style>
 
 From 1 November 2026, a typical low-value parcel from China can carry more in EU levies than half its retail price. On top of the €3 flat customs duty in force since 1 July, a €2 Union handling fee now applies per item, and product identifiers become mandatory on the customs declaration.
 
